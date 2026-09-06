@@ -19,7 +19,7 @@ app.use('/comments', commentRouter);
 
 app.use((err, req, res, next) => {
     res.status(500).json({
-        message: err.message || 'Internal Server Error',
+        message: err.message ,
         success: false
     });
 });
